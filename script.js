@@ -73,6 +73,37 @@ else if (confirmCharacter && confirmLowercase && confirmUppercase) {
 else if (confirmNumber && confirmLowercase && confirmUppercase) {
     choices = number.concat(alpha, alpha2);
 }
+else if (confirmCharacter && confirmNumber) {
+  choices = character.concat(number);
+
+} else if (confirmCharacter && confirmLowercase) {
+  choices = character.concat(alpha);
+
+} else if (confirmCharacter && confirmUppercase) {
+  choices = character.concat(alpha2);
+}
+else if (confirmLowercase && confirmNumber) {
+  choices = alpha.concat(number);
+
+} else if (confirmLowercase && confirmUppercase) {
+  choices = alpha.concat(alpha2);
+
+} else if (confirmNumber && confirmUppercase) {
+  choices = number.concat(alpha2);
+}
+else if (confirmCharacter) {
+  choices = character;
+}
+else if (confirmNumber) {
+  choices = number;
+}
+else if (confirmLowercase) {
+  choices = alpha;
+}
+// this adds space to the uppercase conversion
+else if (confirmUppercase) {
+  choices = space.concat(alpha2);
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
