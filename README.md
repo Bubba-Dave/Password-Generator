@@ -1,10 +1,10 @@
 # Javascript Password Generator
 
-## ThePassword Generator
+## The Password Generator
 
 This is the landing page for the Password Generator
 
-![Top-Page-Area](./assets/images/landingpage.PNG?raw=true "Top-Page-Area")
+![Top-Page-Area](./Assets/images/landingpage.PNG?raw=true "Top-Page-Area")
 
 ## Need a New Secure Password??
 ### Click here to get generate new password!
@@ -36,6 +36,12 @@ Adding Uppercase Letters - This is adds random uppercase letters to the new pass
 ![nav-menu](./Assets/images/lowercase.PNG?raw=true "Navigational Menu")
 
 Adding Lowercase Letters - This is adds random lowercase letters to the new password
+
+## New Password Generated!
+
+![nav-menu](./Assets/images/newpass.PNG?raw=true "Navigational Menu")
+
+Highlight and Copy the new password to use as needed!
 
 ## Built By
 David Hart
