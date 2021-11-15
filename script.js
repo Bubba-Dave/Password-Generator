@@ -104,6 +104,15 @@ else if (confirmLowercase) {
 else if (confirmUppercase) {
   choices = space.concat(alpha2);
 };
+// array placeholder for pass length
+var password = [];
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// for loop - random selection variables: 
+for (var i = 0; i < enter; i++) {
+    var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+    password.push(pickChoices);
+}
+var ps = password.join("");
+UserInput(ps);
+return ps;
+}
