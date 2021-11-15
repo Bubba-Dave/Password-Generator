@@ -18,12 +18,24 @@ https://bubba-dave.github.io/Password-Generator/
 ### Follow the Prompts to Decide the Password Criteria
 
 ![nav-menu](./Assets/images/passlength.PNG?raw=true "Navigational Menu")
+
 Password Length - How long will your new password be
 
 ![nav-menu](./Assets/images/numbers.PNG?raw=true "Navigational Menu")
 
+Adding Numbers - This is adds random numbers to the new password
+
 ![nav-menu](./Assets/images/specialcharacters.PNG?raw=true "Navigational Menu")
+
+Adding Special Characters - This is adds random special characters to the new password
 
 ![nav-menu](./Assets/images/uppercase.PNG?raw=true "Navigational Menu")
 
+Adding Uppercase Letters - This is adds random uppercase letters to the new password
+
 ![nav-menu](./Assets/images/lowercase.PNG?raw=true "Navigational Menu")
+
+Adding Lowercase Letters - This is adds random lowercase letters to the new password
+
+## Built By
+David Hart
