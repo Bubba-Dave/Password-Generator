@@ -116,3 +116,6 @@ var ps = password.join("");
 UserInput(ps);
 return ps;
 }
+// displays generated pass
+function UserInput(ps) {
+  document.getElementById("password").textContent = ps;}
