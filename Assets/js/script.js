@@ -1,5 +1,5 @@
 // Assignment Code
-// input variables: 
+// variables
 var enter;
 var confirmNumber;
 var confirmCharacter;
