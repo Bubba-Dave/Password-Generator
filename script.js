@@ -51,7 +51,28 @@ function generatePassword() {
       confirmUppercase = confirm("Does your pass need Uppercase letters?");
       confirmLowercase = confirm("Probably gunna have Lowercase letters right?");
   };
-  
+  // false choices
+  if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
+    choices = alert("You gotta choose an option!");
+
+}
+// prompts for user input
+else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
+
+    choices = character.concat(number, alpha, alpha2);
+}
+else if (confirmCharacter && confirmNumber && confirmUppercase) {
+    choices = character.concat(number, alpha2);
+}
+else if (confirmCharacter && confirmNumber && confirmLowercase) {
+    choices = character.concat(number, alpha);
+}
+else if (confirmCharacter && confirmLowercase && confirmUppercase) {
+    choices = character.concat(alpha, alpha2);
+}
+else if (confirmNumber && confirmLowercase && confirmUppercase) {
+    choices = number.concat(alpha, alpha2);
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
