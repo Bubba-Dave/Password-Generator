@@ -31,14 +31,27 @@ get.addEventListener("click", function () {
 });
 
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// generate password function
+function generatePassword() {
+  
+  // requires user input
+  enter = parseInt(prompt("How long you want this to be? 8 min - 128 max"));
+  
+  // if user alert for empty submission 
+  if (!enter) {
+      alert("Can't have nothin'.....");
+  } else if (enter < 8 || enter > 128) {
+      
+    // user options displayed
+      enter = parseInt(prompt("Yo yo, you know this beast is gotta be between 8 and 128 characters!"));
 
-  passwordText.value = password;
-
-}
+  } else {
+      confirmNumber = confirm("You wanna add numbers to this?");
+      confirmCharacter = confirm("Thinkin' about special characters?");
+      confirmUppercase = confirm("Does your pass need Uppercase letters?");
+      confirmLowercase = confirm("Probably gunna have Lowercase letters right?");
+  };
+  
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
